@@ -33,11 +33,11 @@ class CardPokemonWidget extends StatelessWidget {
           width: double.infinity,
           fit: BoxFit.fill,
         ), 
-        SizedBox(height: 10,),
+        SizedBox(height: 5,),
         Text(
          name,
           style: TextStyle(
-            fontSize: 12,
+            fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
         ),

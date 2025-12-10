@@ -56,16 +56,16 @@ Widget headerBar(){
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      Text("Pokedex",
+      Text("Pokédex",
             style: TextStyle(
-              fontSize: 35,
+              fontSize: 30,
               fontWeight: FontWeight.bold,),
             ),
             SizedBox(height: 10,),
-            Text("Search for any pokemon you want",
+            Text("Search for a Pokédex by name of using its National Pokédex number.",
             style: TextStyle(
               color: Colors.grey[700],
-              fontSize: 20,),
+              fontSize: 15,),
             ),
     ],
   );
