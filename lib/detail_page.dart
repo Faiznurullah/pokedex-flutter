@@ -11,7 +11,20 @@ class DetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
+     appBar: AppBar(
+      title: Text(name),
+      centerTitle: true,
+     ),
+     body: SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.all(18),
+        child: Column(
+          children: [
+           
+          ],
+        ),
+      )
+     ),
     );
   }
 }
