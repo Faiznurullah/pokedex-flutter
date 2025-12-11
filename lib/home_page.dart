@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../shared/widget/card_pokemon.dart';
 import '../model/dummy_data.dart';
+import 'detail_page.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
@@ -41,7 +42,17 @@ Widget listPokemon(){
       itemBuilder: (context, index) {
         return CardPokemonWidget(
           onTap: () {
-            print('Tapped on ${dummyPokemonList[index].name}');
+            // Navigate to detail page
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DetailPage(
+                  imageUrl: dummyPokemonList[index].imageUrl,
+                  name: dummyPokemonList[index].name,
+                  type: dummyPokemonList[index].type,
+                ),
+              ),
+            );
           },
           imageUrl:  dummyPokemonList[index].imageUrl,
           name: dummyPokemonList[index].name,
