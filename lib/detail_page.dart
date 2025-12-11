@@ -34,6 +34,10 @@ class DetailPage extends StatelessWidget {
             children: [
               SizedBox(height: 20),
               
+              CardPokemonWidget(
+                imageUrl: imageUrl,
+              ),
+
             ],
           ),
         ),
