@@ -17,7 +17,12 @@ class DetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Column(
         children: [
-          Text(name),
+          Text(name,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              )
+          ),
           Text(type, style: TextStyle(fontSize: 12),)
         ],
       ), centerTitle: true),

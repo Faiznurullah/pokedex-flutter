@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 class CardPokemonWidget extends StatelessWidget {
 
   final String imageUrl;
-  final String name;
-  final String type;
+  final String? name;
+  final String? type;
   final VoidCallback? onTap;
 
   const CardPokemonWidget({
     super.key,
     required this.imageUrl,
-    required this.name,
-    required this.type,
+    this.name,
+    this.type,
     this.onTap,
   });
 
@@ -35,7 +35,7 @@ class CardPokemonWidget extends StatelessWidget {
         ), 
         SizedBox(height: 5,),
         Text(
-         name,
+          name ?? '',
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
@@ -43,7 +43,7 @@ class CardPokemonWidget extends StatelessWidget {
         ),
         SizedBox(height: 5,),
         Text(
-         type,
+         type ?? '',
           style: TextStyle(
             fontSize: 10,
             color: Colors.grey[700],
